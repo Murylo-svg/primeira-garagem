@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro e Caminhão</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <h1>Interação com Veículos</h1>
+    <div class="container">
+        <div class="veiculo" id="carroEsportivo">
+            <h2>Carro Esportivo</h2>
+            <img src="IMAGEM/foto05emp-201-sf90-b10-768x440.webp" alt="#">
+            <p id="statusCarro">Velocidade: 0 km/h</p>
+            <button onclick="ligarCarro()">Ligar</button>
+            <button onclick="acelerarCarro()">Acelerar</button>
+            <button onclick="ativarTurbo()">Ativar Turbo</button>
+            <button onclick="desligarCarro()">Desligar</button>
+            <button onclick="buzinarCarro()">Buzinar</button>
+        </div>
+        <div class="veiculo" id="caminhao">
+            <h2>Caminhão</h2>
+            <img src="IMAGEM/pr_biocombustiveis_2103221619_0-1.jpg" alt="#">
+            <p id="statusCaminhao">Carga: 0/20 toneladas</p>
+            <button onclick="ligarCaminhao()">Ligar</button>
+            <button onclick="carregarCaminhao()">Carregar</button>
+            <button onclick="descarregarCaminhao()">Descarregar</button>
+            <button onclick="desligarCaminhao()">Desligar</button>
+            <button onclick="buzinarCaminhao()">Buzinar</button>
+        </div>
+    </div>
+    <audio id="buzinaCarro" src="AUDIO/buzina-carro.mp3"></audio>
+    <audio id="buzinaCaminhao" src="AUDIO/buzina-caminhao_FakjvUZ.mp3"></audio>
+    <script src="java.js"></script>
+<body>
+<html>
